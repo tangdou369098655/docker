@@ -1,4 +1,4 @@
-@[基于CentOS Linux release 7.8.2003 (Core)安装并使用Docker](https://github.com/tangdou369098655/docker/edit/master/README.md)
+@[图文并茂基于CentOS Linux release 7.8.2003 Core安装并Docker化你的Node.js应用](https://github.com/tangdou369098655/docker/edit/master/README.md)
 
 
 简体中文 | [English](https://github.com/tangdou369098655/docker/edit/master/README_eng.md)
