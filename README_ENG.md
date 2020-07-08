@@ -1,7 +1,7 @@
 @[Use Docker to create a Node Development Environment Based on CentOS Linux release 7.8.2003 Core](https://github.com/tangdou369098655/docker/edit/master/README.md)
 
 
-English | [简体中文](https://github.com/tangdou369098655/docker/edit/master/README.md)
+English | [简体中文](https://github.com/tangdou369098655/docker/blob/master/README.md)
 
 ## Introduction
 * This article describes how to deploy and use docker in CentOS Linux release 7.8.2003
