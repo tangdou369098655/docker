@@ -19,27 +19,6 @@
 - 因为本来用的是阿里云服务器进行安装，Aliyun Linux 2.1903 LTS 64位操作系统的ECS实例，后期遇到一些问题，查詢很多資料按照資料操作，但是問題暂时还未解决，所以用了同事的服务器进行再次安装
 - 具体配置情况如下
 - 查看Linux 内核
-@[Use Docker to create a Node Development Environment Based on CentOS Linux release 7.8.2003 Core](https://github.com/tangdou369098655/docker/edit/master/README.md)
-
-
-English | [简体中文](https://github.com/tangdou369098655/docker/edit/master/README.md)
-
-## Introduction
-* This article describes how to deploy and use docker in CentOS Linux release 7.8.2003
-* The purpose is to use the simplest and fastest way to solve the deployment requirements of Nodejs using Docker
-
-
-
-## Precondition
->You need a server~~
->Open it, just like this on below
-
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020052418024250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-## Remarks
-- Because the alicloud server was originally used for the installation, the ECS instance of aliyun Linux 2.1903 LTS 64 bit operating system encountered some problems in the later stage. After querying a lot of data and operating according to the data, but the problem has not been solved for the time being, so I used my colleague's server to install it again.
-- The specific configuration is as follows
-- View Linux Kernel
 
 ```bash
 uname -a
