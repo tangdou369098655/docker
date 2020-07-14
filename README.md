@@ -7,7 +7,7 @@
 * 本文介绍如何在CentOS Linux release 7.8.2003部署并使用Docker。
 * 旨在使用最简单快速的办法，:smirk:解决使用docker部署nodejs需求&#x1F353;。
 
-## :grin::cherry_blossom:
+## :cherry_blossom::cherry_blossom::cherry_blossom::cherry_blossom::cherry_blossom::cherry_blossom:
 
 ## 前提
 >你要有一个服务器哟~~
@@ -33,9 +33,9 @@ cat /proc/version
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630222951679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ## 步骤一：链接服务器:cherry_blossom:
-1. 链接成功后如下图所示，如果不知道如何链接，可以参考（这个地址）
+1. 链接成功后如下图所示，如果不知道如何链接，可以参考（这个地址）:cherries:
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200524181539512.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-2. 依次运行以下命令添加yum源。
+2. 依次运行以下命令添加yum源。:cherries:
 
 ```bash
 yum update
@@ -49,7 +49,7 @@ yum list
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200628152912139.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200628152946921.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
-3. 安装并运行Docker。
+3. 安装并运行Docker。:cherries:
 
 ```bash
 yum install docker-io -y
@@ -59,7 +59,7 @@ systemctl start docker
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200628153143730.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200628153644197.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
-4. 解决报错，查看错误信息：(備註，如果你用的CentOS Linux可以直接跳過這一步，一般沒有下面問題)
+4. 解决报错，查看错误信息：:cherries:(備註，如果你用的CentOS Linux可以直接跳過這一步，一般沒有下面問題)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200628153838790.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
 ```bash
