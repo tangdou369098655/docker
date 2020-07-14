@@ -1,4 +1,4 @@
-@[:watermelon:图文并茂基于CentOS Linux release 7.8.2003 Core安装并Docker化你的Node.js应用:watermelon:](https://github.com/tangdou369098655/docker/edit/master/README.md)
+@[图文并茂基于CentOS Linux release 7.8.2003 Core安装并Docker化你的Node.js应用:watermelon:](https://github.com/tangdou369098655/docker/edit/master/README.md)
 
 
 :cherry_blossom:简体中文:cherry_blossom: | [English](https://github.com/tangdou369098655/docker/blob/master/README_ENG.md)
@@ -348,8 +348,8 @@ docker image ls
 #删除镜像
 docker image rm ${image_id}
 ```
-## 结语
+## 结语:watermelon::watermelon::watermelon::watermelon::watermelon::watermelon:
 > 本教程旨在快速完成Node.js项目部署，其他配置项詳細情況问题没有列举出来哦...后期有空会增加配置文章哟~~
-> 欢迎大家指出文章需要改正之处~  
+> 欢迎大家指出文章需要改正之处~  &#x1F353;
 > 如果有更好的方法，欢迎大家提出来，共同进步哟~~ 
 
