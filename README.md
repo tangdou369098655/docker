@@ -5,7 +5,7 @@
 
 ## 说明
 * 本文介绍如何在CentOS Linux release 7.8.2003部署并使用Docker。
-* 旨在使用最简单快速的办法，解决使用docker部署nodejs需求。
+* 旨在使用最简单快速的办法，:smirk:解决使用docker部署nodejs需求&#x1F353;。
 
 
 
