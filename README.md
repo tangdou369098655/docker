@@ -1,7 +1,7 @@
-@[:cherries::cherries::cherries:图文并茂基于CentOS Linux release 7.8.2003 Core安装并Docker化你的Node.js应用:cherries::cherries::cherries:](https://github.com/tangdou369098655/docker/edit/master/README.md)
+@[:watermelon:图文并茂基于CentOS Linux release 7.8.2003 Core安装并Docker化你的Node.js应用:watermelon:](https://github.com/tangdou369098655/docker/edit/master/README.md)
 
 
-:cherries:简体中文:cherries: | [English](https://github.com/tangdou369098655/docker/blob/master/README_ENG.md)
+:cherry_blossom:简体中文:cherry_blossom: | [English](https://github.com/tangdou369098655/docker/blob/master/README_ENG.md)
 
 ## 说明:cherries:
 * 本文介绍如何在CentOS Linux release 7.8.2003部署并使用Docker。
