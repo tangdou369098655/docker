@@ -349,7 +349,9 @@ docker image ls
 docker image rm ${image_id}
 ```
 ## 结语:watermelon::watermelon::watermelon::watermelon::watermelon::watermelon:
-> 本教程旨在快速完成Node.js项目部署，其他配置项詳細情況问题没有列举出来哦...后期有空会增加配置文章哟~~
-> 欢迎大家指出文章需要改正之处&#x1F353;~  
-> 如果有更好的方法，欢迎大家提出来，共同进步哟~~ 
+>  本教程旨在快速完成Node.js项目部署，其他配置项詳細情況问题没有列举出来哦...后期有空会增加配置文章哟~~
+
+>  欢迎大家指出文章需要改正之处&#x1F353;~  
+
+>  如果有更好的方法，欢迎大家提出来，共同进步哟~~ 
 
