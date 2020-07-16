@@ -26,11 +26,12 @@ uname -a
 cat /proc/version
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630222141221.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-- 查看当前系统版本的详细信息
+
+- View the details of the current system version
 
 ```bash
-1.cat /etc/redhat-release(此方法只适合Redhat 系的Linux)
-2.lsb_release -a (此命令适用于所有的Linux 发行版本）
+1.cat /etc/redhat-release(This method is only suitable for RedHat Linux)
+2.lsb_release -a (This command applies to all Linux distributions）
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630222951679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ## 步骤一：链接服务器
