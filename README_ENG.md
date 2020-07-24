@@ -225,8 +225,7 @@ npm-debug.log
 docker build -t node78:v1 .
 
 ```
-Before the Docker deamons execute the instructions in the Dockerfile ，首先会对 Dockerfile 进行语法检查，有语法错误时会返回：（如果按照上面的Dockerfile配置文件，不会报这个错，配置文件是后期修改过的，又重新截图的哦~）
-Before the Docker deamons execute the instructions in the Dockerfile ，it will first check the syntax of the dockerfile. If there is a syntax error, it will 
+Before the Docker deamons execute the instructions in the Dockerfile ，it will first check the syntax of the dockerfile. If there is a syntax error, it will be returned: (if you follow the above dockerfile cofiguration file, this error will not be reported. The configuration file has been modified later, and the screenshot is taker again.)
 
 ```bash
 [root@VM_0_5_centos test]# docker build -t node78:v1 .
@@ -235,36 +234,35 @@ Error response from daemon: Unknown instruction: ​：
 ```
 
 
-7. 查看镜像
+7. View image
 
 ```bash
 docker images
 ​
-# 示例输出
+# Sample output
 REPOSITORY                      TAG        ID              CREATED
 node                            8          1934b0b038d1    5 days ago
 ${your_name}/${image_name}    latest     d64d3505b0d2    1 minute ago
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020063023380787.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
-8. 嘗試一下docker run node不僅可以可以尋找鏡像，如果沒有它就幫助你下載最新的版本
-因为我下载的不是最新镜像，它自动开始搞最新啦
+8. Try 'docker run node', which can not only find images, but also help you download the latest version if there is no node image.
+Because I don't download the latest image, it will automatically start to download the latest version.
 
 ```bash
 docker run node
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705173202831.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-9. 查看镜像
->你會看到我們有倆鏡像了,一個最新版,一個是初始下載的版本.要是不想要後期可以刪除哦~
->圖片裡的docker run 命令先不要執行哦~   
+9. View image
+>You will see that we have two images, one is the latest version and the other is the original download version. If you don't want to delete it later~
+>Do not execute the docker run command in the picture~
 ```bash
 docker image ls
 ```
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705222720723.png)
  
-10. 准备一个简单的nodejs文件
-
+10. Prepare a simple nodejs file
 ```bash
 var http = require('http');
 
@@ -283,7 +281,7 @@ console.log('Server running at http://127.0.0.1:8090/');
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705225247400.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705225633983.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
-11. 构建镜像，不要忘了後面還有一個點點哦
+11. Build the image, don't forget there is a little bit behind it.
 
 ```bash
 docker build -t docker.io/node:latest .
@@ -291,16 +289,16 @@ docker build -t docker.io/node:latest .
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705230105411.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
  
-* 启动容器脚本
+* Start container script
 ```bash
 docker run -d -p 8090:8090  docker.io/node:latest 
 
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705230144806.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-12. 测试，成功连接
+12.Test, successful connected
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705232415710.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
  
- 至此恭喜，部署成功！
+ Congratulations on the successful depluyment!
  ## 常用命令
 * 另外附一些常用命令：
 ```bash
