@@ -36,8 +36,8 @@ cat /proc/version
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630222951679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
 ## Step 1: Link server
-1. If you don't know how to link, you can refer to (this address)
-1. 链接成功后如下图所示，如果不知道如何链接，可以参考（这个地址）
+1. After the link is successful, it is shown in the figure below. If you don't know how to link, you can refer to (this address)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200524181539512.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 2. Run the following commands in turn to add the yum source.
 
@@ -120,18 +120,19 @@ yum grouplist
 
 #This is usually done by installing both packages, which will make sure you have all the tools you need to compile
 yum groupinstall "Development Tools"
-#你必须这样才能让 make *config 这个指令正确地执行
+#You have to do this to get the make * config command to execute correctly.
 yum install ncurses-devel
-#如果你没有 X 环境，这一条可以不用
+#If you don't have this environment, you can use this one.
 yum install qt-devel
-#创建 CentOS-6 内核时需要它们
+#They are required to create the CentOS-7 Kernel.
 yum install hmaccalc zlib-devel binutils-devel elfutils-libelf-devel 
 ```
 
-- 不好意思，上面的报错一直没有解决，找了许多方法去处理，但是始终是没有结果，于是我换了同事的服务器按照以上步骤安装。
-- 下面的内容均基于CentOS Linux release 7.8.2003 (Core)
 
-5.  查看安装版本,启动 docker
+- Sorry, the above error has not been solved, and many methods have been found to deal with it, but there is no result. So I changed my colleague's server and installed it according to the above steps.
+- The following is based on CentOS Linux release 7.8.2003 (Core)
+
+5.  Check the installation version and start docker.
 
 ```bash
 docker version
@@ -139,13 +140,13 @@ systemctl start docker
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630223714662.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630223733893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-6. 验证是否安装成功
+6. Verify that the installation was successful
 
 ```bash
 docker info
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630223820216.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-7. 设置开机启动
+7. Set boot up
 
 ```bash
  chkconfig docker on
@@ -153,8 +154,8 @@ docker info
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630224457370.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
-## 配置Docker
-1. 切换国内镜像源, 加速访问 Docker Hub
+## Configure Docker
+1. Switch domestic image source to accelerate access to Docker Hub
 
 ```bash
 echo "OPTIONS='--registry-mirror=https://mirror.ccs.tencentyun.com'" >> /etc/sysconfig/docker
@@ -162,7 +163,7 @@ systemctl daemon-reload
 service docker restart
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630224955549.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-2. 安装配置node环境
+2. Install and configure node environment.
 
 ```bash
 docker search node
@@ -172,7 +173,7 @@ docker pull docker.io/node:7.8.0
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630225022144.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630225130713.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
-3. 在自己喜欢的目录里创建Dockerfile文件
+3. Create a dockerfile file in your favorite directory.
 
 ```bash
 [root@VM_0_5_centos ~]# cd /var/opt/test
@@ -185,32 +186,32 @@ docker pull docker.io/node:7.8.0
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630231730478.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630231906913.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
-4. 假设Node.js应用的启动命令为node server.js, 监听端口为8090
+4. Hypothesis Node.js The start command of the application is node server.js, The listening port is 8090
 
 ```bash
-# 可以指定依赖的node镜像的版本 node:<version>，如果不指定，就会是最新的
+# You can specify the version of the dependent node image  node:<version>, if not specified, it will be the latest.
 FROM node
 WORKDIR /app
 
-# 把其他源文件复制到工作目录
+# Copy other source files to the working directory
 COPY ./app /app
-# 把 package.json，package-lock.json(npm@5+) 或 yarn.lock 复制到工作目录(相对路径)
+# Put package.json，package-lock.json(npm@5+) Or yarn.lock Copy to working directory(relstive path)
 RUN npm install
-# 只安装dependencies依赖
-# 替换成应用实际的端口号
+# Install dependencies only
+# Replace with the actual port number of the application 
 EXPOSE 8090
-# 这里根据实际起动命令做修改
+# It is modified according to the actual start command
 CMD [ "node", "server.js" ]
 
 
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705230429846.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-5. 补充.dockerignore
+5. Supplement .dockerignore
 
 ```bash
 touch .dockerignore
 ```
-.dockerignore内容如下
+.dockerignore  reads as follows
 
 ```bash
 node_modules
