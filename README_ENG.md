@@ -219,13 +219,14 @@ npm-debug.log
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630233218185.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705232058192.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-6. 创建镜像
+6. Create mirror
 
 ```bash
 docker build -t node78:v1 .
 
 ```
-在 Docker 守护进程执行 Dockerfile 中的指令前，首先会对 Dockerfile 进行语法检查，有语法错误时会返回：（如果按照上面的Dockerfile配置文件，不会报这个错，配置文件是后期修改过的，又重新截图的哦~）
+Before the Docker deamons execute the instructions in the Dockerfile ，首先会对 Dockerfile 进行语法检查，有语法错误时会返回：（如果按照上面的Dockerfile配置文件，不会报这个错，配置文件是后期修改过的，又重新截图的哦~）
+Before the Docker deamons execute the instructions in the Dockerfile ，it will first check the syntax of the dockerfile. If there is a syntax error, it will 
 
 ```bash
 [root@VM_0_5_centos test]# docker build -t node78:v1 .
