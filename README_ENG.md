@@ -3,15 +3,15 @@
 
 English | [简体中文](https://github.com/tangdou369098655/docker/blob/master/README.md)
 
-## Introduction&#x1F353;&#x1F353;&#x1F353;&#x1F353;
-* This article describes how to deploy and use docker in CentOS Linux release 7.8.2003
-* The purpose is to use the simplest and fastest way to solve the deployment requirements of Nodejs using Docker
+## Introduction&#x1F353;😏
+* This article describes how to deploy and use docker in CentOS Linux release 7.8.2003 🍑
+* The purpose is to use the simplest and fastest way to solve the deployment requirements of Nodejs using Docker 🍒
 
 
 
 ## Precondition:cherries:
->You need a server~~
->Open it, just like this on below
+>You need a server😆~~
+>Open it, just like this on below 🍓
 
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020052418024250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
@@ -36,10 +36,10 @@ cat /proc/version
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630222951679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
 ## Step 1: Link server &#x1F353;
-1. After the link is successful, it is shown in the figure below. If you don't know how to link, you can refer to [here](https://github.com/tangdou369098655/FrontEndDeployment/blob/master/nginx_zh.md)
+1. After the link is successful, it is shown in the figure below. If you don't know how to link, you can refer to [here](https://github.com/tangdou369098655/FrontEndDeployment/blob/master/nginx_eng.md)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200524181539512.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-2. Run the following commands in turn to add the yum source.
+2. Run the following commands in turn to add the yum source.🍏
 
 ```bash
 yum update
@@ -53,7 +53,7 @@ yum list
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200628152912139.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200628152946921.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
-3. Install and run Docker。
+3. Install and run Docker。😍
 
 ```bash
 yum install docker-io -y
@@ -64,7 +64,7 @@ systemctl start docker
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200628153644197.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
 
-4. Solve the error report and check the error information: (Note: if you use CentOS Linux, you can skip this step directly, generally there is no problem below)
+4. Solve the error report and check the error information: (Note: if you use CentOS Linux, you can skip this step directly, generally there is no problem below)🍉
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200628153838790.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
 ```bash
@@ -219,7 +219,7 @@ npm-debug.log
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630233218185.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705232058192.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-6. Create mirror
+6. Create mirror😍
 
 ```bash
 docker build -t node78:v1 .
@@ -234,7 +234,7 @@ Error response from daemon: Unknown instruction: ​：
 ```
 
 
-7. View image
+7. View image💌
 
 ```bash
 docker images
@@ -359,8 +359,8 @@ docker image ls
 # delete mirror
 docker image rm ${image_id}
 ```
-## conclusion
-> this tutorial is designed to be done quickly 'node.js' project deployment, details of other configuration items are not listed, configuration articles will be added later ~~
-> welcome to point out that the article needs to be corrected ~~ 
-> if there is a better way, we are welcome to come forward and make progress together ~
+## conclusion😍💌
+> this tutorial is designed to be done quickly 'node.js' project deployment, details of other configuration items are not listed, configuration articles will be 🍒 added later ~~
+> welcome to point out that the article needs to be corrected 🍑 ~~ 
+> if there is a better way, we are welcome to come forward and make progress together🍓 ~
 
