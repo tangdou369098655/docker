@@ -3,13 +3,13 @@
 
 :cherry_blossom:简体中文:cherry_blossom: | [English](https://github.com/tangdou369098655/docker/blob/master/README_ENG.md)
 
-## 说明:cherries:
+## 说明:cherries:🌺🌻
 * 本文介绍如何在CentOS Linux release 7.8.2003部署并使用Docker。
 * 旨在使用最简单快速的办法，:smirk:解决使用docker部署nodejs需求&#x1F353;。
 
 ## :cherry_blossom::cherry_blossom::cherry_blossom::cherry_blossom::cherry_blossom::cherry_blossom:
 
-## 前提:cherries:
+## 前提:cherries:🌺🌻
 >你要有一个服务器哟~~
 >购买后打开就像这个下面这个样子:grin:
 
