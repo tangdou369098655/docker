@@ -299,28 +299,30 @@ docker run -d -p 8090:8090  docker.io/node:latest
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705232415710.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
  
  Congratulations on the successful depluyment!
- ## 常用命令
-* 另外附一些常用命令：
+ ## Common commands
+* In addition, some common commands are attached：
 ```bash
-# 查看所有容器(包括已终止的)
+# view all containers (including terminated)
 docker ps -a
-# 或使用新命令
+# or use the new command
+
+
 docker container ls -a
 ```
 
 ```bash
-# 查看运行中的容器
+# view running containers
 docker ps
-# 或使用新命令
+# or use the new command
 docker container ls
 ​
-# 示例输出
+# sample output
 ID            IMAGE                                COMMAND    ...   PORTS
 ecce33b30ebf  ${your_name}/${image_name}:latest  npm start  ...   49160->8080
 ```
 
 ```bash
-# 查看某容器内日志
+# view logs in a container
 docker logs -f ${container_id}
 ```
 
@@ -328,34 +330,37 @@ docker logs -f ${container_id}
 # 进入某容器，并有shell执行环境
 # 进入容器
 # -i表示：交互式操作，-t表示：终端
+# enter a container and have a shell execution environment
+# enter the container
+# -i for interactive operation，-t for terminal
 docker exec -it ${container_id} bash
-# 可通过输入 exit 退出 
+# you can exit by typing 'exit'
 ```
 
 ```bash
-# 停止容器
+# stop container
 docker container stop ${container_id}
 ```
 
 ```bash
-# 启动已终止的容器
+# start terminated container
 docker container start ${container_id}
 ```
 
 ```bash
-#删除容器
+# delete container
 docker container rm ${container_name || container_id}
 
-#查看镜像
+# view image
 docker images
-# 或使用新命令
+# or use the new command
 docker image ls
 
-#删除镜像
+# delete mirror
 docker image rm ${image_id}
 ```
-## 结语
-> 本教程旨在快速完成Node.js项目部署，其他配置项詳細情況问题没有列举出来哦...后期有空会增加配置文章哟~~
-> 欢迎大家指出文章需要改正之处~  
-> 如果有更好的方法，欢迎大家提出来，共同进步哟~~ 
+## conclusion
+> this tutorial is designed to be done quickly 'node.js' project deployment, details of other configuration items are not listed, configuration articles will be added later ~~
+> welcome to point out that the article needs to be corrected ~~ 
+> if there is a better way, we are welcome to come forward and make progress together ~
 
