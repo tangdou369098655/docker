@@ -1,15 +1,15 @@
-@[Use Docker to create a Node Development Environment Based on CentOS Linux release 7.8.2003 Core](https://github.com/tangdou369098655/docker/edit/master/README.md)
+@[Use Docker to create a Node Development Environment Based on CentOS Linux release 7.8.2003 Core &#x1F353;](https://github.com/tangdou369098655/docker/edit/master/README.md)
 
 
 English | [简体中文](https://github.com/tangdou369098655/docker/blob/master/README.md)
 
-## Introduction
+## Introduction&#x1F353;&#x1F353;&#x1F353;&#x1F353;
 * This article describes how to deploy and use docker in CentOS Linux release 7.8.2003
 * The purpose is to use the simplest and fastest way to solve the deployment requirements of Nodejs using Docker
 
 
 
-## Precondition
+## Precondition:cherries:
 >You need a server~~
 >Open it, just like this on below
 
@@ -35,8 +35,8 @@ cat /proc/version
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630222951679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 
-## Step 1: Link server
-1. After the link is successful, it is shown in the figure below. If you don't know how to link, you can refer to (this address)
+## Step 1: Link server &#x1F353;
+1. After the link is successful, it is shown in the figure below. If you don't know how to link, you can refer to [here](https://github.com/tangdou369098655/FrontEndDeployment/blob/master/nginx_zh.md)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200524181539512.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 2. Run the following commands in turn to add the yum source.
