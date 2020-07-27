@@ -1,10 +1,10 @@
-@[Use Docker to create a Node Development Environment Based on CentOS Linux release 7.8.2003 Core &#x1F353;](https://github.com/tangdou369098655/docker/edit/master/README.md)
+@[🌺Use Docker to create a Node Development Environment Based on CentOS Linux release 7.8.2003 Core 🌺](https://github.com/tangdou369098655/docker/edit/master/README.md)
 
 
 English | [简体中文](https://github.com/tangdou369098655/docker/blob/master/README.md)
 
-## Introduction&#x1F353;😏
-* This article describes how to deploy and use docker in CentOS Linux release 7.8.2003 🍑
+## 💗Introduction&#x1F353;🍋
+* This article describes how to deploy and use docker in CentOS Linux release 7.8.2003 🍒
 * The purpose is to use the simplest and fastest way to solve the deployment requirements of Nodejs using Docker 🍒
 
 
@@ -219,7 +219,7 @@ npm-debug.log
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200630233218185.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705232058192.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-6. Create mirror😍
+6. Create mirror😍 🍒
 
 ```bash
 docker build -t node78:v1 .
@@ -234,7 +234,7 @@ Error response from daemon: Unknown instruction: ​：
 ```
 
 
-7. View image💌
+7. 🍒 View image💌
 
 ```bash
 docker images
@@ -262,7 +262,7 @@ docker image ls
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705222720723.png)
  
-10. Prepare a simple nodejs file
+10. Prepare a simple nodejs file 🍒
 ```bash
 var http = require('http');
 
@@ -295,7 +295,7 @@ docker run -d -p 8090:8090  docker.io/node:latest
 
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705230144806.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
-12.Test, successful connected
+12.Test, successful connected 🍉
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200705232415710.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rhbmdkb3UzNjkwOTg2NTU=,size_16,color_FFFFFF,t_70)
  
  Congratulations on the successful depluyment!
@@ -359,8 +359,10 @@ docker image ls
 # delete mirror
 docker image rm ${image_id}
 ```
-## conclusion😍💌
+## conclusion🍉💌
 > this tutorial is designed to be done quickly 'node.js' project deployment, details of other configuration items are not listed, configuration articles will be 🍒 added later ~~
-> welcome to point out that the article needs to be corrected 🍑 ~~ 
+
+> welcome to point out that the article needs to be corrected 🍇 ~~ 
+
 > if there is a better way, we are welcome to come forward and make progress together🍓 ~
 
