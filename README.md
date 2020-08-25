@@ -347,6 +347,18 @@ docker image ls
 
 #删除镜像
 docker image rm ${image_id}
+
+#其他命令
+doctor run -it -d --name springboot -p 8080:8080 springboot:latest
+-d 后台运行容器,并返回容器ID
+-i  以交互模式运行容器，通常与-t同时使用
+-t  为容器新分配一个伪输入终端，通常与i同时使用
+-P  大写，随机端口映射，容器内部端口随机
+-p 小写，指定端口映射，格式为: 主机端口：容器端口
+--name 重命名
+FROM 100.111.222.111/library/centos/jdk:1.8.0 -----OPEANJDK:8
+从镜像下载JDK
+FROM 是指需要仓库下载一个JDK的镜像作为底层系统，然后在该JDK上执行后面那些操作。
 ```
 ## 结语:watermelon::watermelon::watermelon::watermelon::watermelon::watermelon:
 >  本教程旨在快速完成Node.js项目部署，其他配置项詳細情況问题没有列举出来哦...后期有空会增加配置文章哟~~
